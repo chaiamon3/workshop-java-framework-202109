@@ -20,9 +20,6 @@ public class EmployeeService {
     EmployeeRepository employeeRepository;
 
     public EmployeeResponse getById(int id) {
-//        EmployeeResponse employeeResponse = new EmployeeResponse();
-//        employeeResponse.setId(id);
-//        employeeResponse.setName("Nattawat");
         Optional<Employee> result = employeeRepository.findById(id);
         if (result.isPresent()) {
             // Map data from entity to response

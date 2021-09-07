@@ -1,7 +1,6 @@
 package com.example.demoapp.employees;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 /**
  * <description>
@@ -11,8 +10,7 @@ import lombok.Setter;
  * @contact nattawat.k@kbtg.tech
  * @date 9/6/2021 2:24 PM
  */
-@Getter
-@Setter
+@Data
 public class EmployeeResponse {
 
     private int id;
