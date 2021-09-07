@@ -1,6 +1,6 @@
 package com.example.demoapp.employees;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -14,9 +14,9 @@ import java.util.Optional;
  * @date 9/6/2021 4:41 PM
  */
 @Service
+@AllArgsConstructor
 public class EmployeeService {
 
-    @Autowired
     EmployeeRepository employeeRepository;
 
     public EmployeeResponse getById(int id) {
