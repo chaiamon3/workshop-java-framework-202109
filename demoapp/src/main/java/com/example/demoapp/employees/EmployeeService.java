@@ -32,7 +32,7 @@ public class EmployeeService {
             employeeResponse.setName(employee.getName());
             return employeeResponse;
         }
-        throw new RuntimeException("Employee not found id=" + id);
+        throw new EmployeeNotFoundException("Employee not found id=" + id);
     }
 
 }
